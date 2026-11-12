@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Redirecting...</title>
+  <script>
+    const ua = navigator.userAgent;
+    const isPhone = /iPhone|iPod|Android.*Mobile|Windows Phone/i.test(ua);
+
+    if (isPhone) {
+      // Phone link (opens Discord mobile app)
+      window.location.replace("https://lukkz.straw.page");
+    } else {
+      // Tablet, Laptop, and PC link (opens web profile)
+      window.location.replace("https://haunt.gg/luk");
+    }
+  </script>
+</head>
+<body>
+  <p>Redirecting to Link page...</p>
+</body>
+</html>
